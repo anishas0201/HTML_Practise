@@ -1,8 +1,0 @@
-D:\Test\HTMLPractise\HTMLPractise\bin\Debug\HTMLPractise.exe.config
-D:\Test\HTMLPractise\HTMLPractise\bin\Debug\HTMLPractise.exe
-D:\Test\HTMLPractise\HTMLPractise\bin\Debug\HTMLPractise.pdb
-D:\Test\HTMLPractise\HTMLPractise\obj\Debug\HTMLPractise.csproj.AssemblyReference.cache
-D:\Test\HTMLPractise\HTMLPractise\obj\Debug\HTMLPractise.csproj.SuggestedBindingRedirects.cache
-D:\Test\HTMLPractise\HTMLPractise\obj\Debug\HTMLPractise.csproj.CoreCompileInputs.cache
-D:\Test\HTMLPractise\HTMLPractise\obj\Debug\HTMLPractise.exe
-D:\Test\HTMLPractise\HTMLPractise\obj\Debug\HTMLPractise.pdb
