@@ -6,16 +6,63 @@
     <title></title>
 
     <style>
+       .GFG{
+            opacity:2;
+            background-color: burlywood;
+            color: floralwhite;
+            text-align: right;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            float: right;
+        }
+
+        .signbtn {
+            opacity: 2;
+            background-color: burlywood;
+            color: floralwhite;
+            text-align: right;
+            font-size: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            float: right; 
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
         .headerpart {
             background-color: aliceblue;
             text-align:left;
             font-size:30px;
             width:100%;
-            height:fit-content;
+            height:auto;
            
         }
 
-        .front {
+      .front {
             text-align:center;
         }
 
@@ -23,31 +70,29 @@
             text-align:start;
         }
 */
-        .mydiv {
+      .mydiv {
             display: inline-table;
             width: 33%;
         }
 
-    
-
-        .pic{
+      .pic{
             display:inline
         }
       
-        h3 {
+       h3 {
             text-align: center;
             font-size:28px;
                
         }
 
-        span {
+       .smalltxt {
             text-align: center;
             font-size: 30px;
             font-size-adjust: inherit;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        footer {
+      footer {
             background-color: dimgray;
             text-align: center;
             align-content: end;
@@ -56,73 +101,95 @@
         }
     </style>
 </head>
-<header style="background-color:beige; height: 55px;width: 100%">
-    
-    <h1 style="font-family:'Arial Rounded MT';color:black;text-align:left; padding-top: 15px;"><img src="duolingo.svg" alt="icon" width="30" /> <span style="font-weight: bold; text-shadow: 2px 2px #edca98">duolingo</span> english test</h1>
-    <
-</header>
-<body>
-    <div class="headerpart">
+  <body>
+    <header style="background-color:beige; height: 60px;width: 100%">
 
-        <div class="front">
-            <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/da0c12bab844e3569971.svg"
-                 alt="boy with laptop" width="900" height="500">
-        </div>
-        <br/> <br/>
-        <span class="head">Certify your English proficiency today.</span>
-        <ul>
-            <li>
-                Test online anytime, anywhere
-            </li>
-            <li>
-                Finish in 1 hour and get results in 2 days
-            </li>
-            <li>
-                Accepted by over 4000 universities
-            </li>
-        </ul>
-    </div>
-    
+        <h1 style="font-family:'Arial Rounded MT';color:black;text-align:left; padding-top: 15px;">
+            <img src="duolingo.svg" alt="icon" width="30" />
+            <span style="font-weight:bold; text-shadow: 2px 2px #edca98">duolingo</span>
+            english test
+            <button class="GFG"
+                    onclick="window.location.href = 'http://localhost:57919/Registration2.html';">
+                Login
+            </button> 
+            <button class="signbtn"
+                    onclick="window.location.href = 'http://localhost:57919/NewAccount.html';">
+                Sign Up
+            </button>
+        </h1>
+          <hr />
+          <div class="tooltip">
+              <span style="font-family:Cooper; font-size:20px;">Taking the Test</span> &nbsp; &nbsp;
+              <span style="font-family:Cooper; font-size: 20px;">Accepting the Test</span> &nbsp; &nbsp;
+              <span style="font-family:Cooper; font-size: 20px;">Test Research</span>
+              <span class="tooltiptext">Click Here</span>
+          </div>
 
-    <h3>On demand, anywhere in the world</h3>
-    <div class="mydiv">
+    </header>
+      <br />
+      <br />
+      <br />
+      <div class="headerpart">
 
-        <div class="pic">
-            <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/7f3afeb8d03858f5e1af.svg"
-                 alt="studying boy" width="300" height="300"> <br />
-        </div>
+          <div class="front">
+              <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/da0c12bab844e3569971.svg"
+                   alt="boy with laptop" width="900" height="500">
+          </div>
+          <br /> <br />
+          <span class="head">Certify your English proficiency today.</span>
+          <ul>
+              <li>
+                  Test online anytime, anywhere
+              </li>
+              <li>
+                  Finish in 1 hour and get results in 2 days
+              </li>
+              <li>
+                  Accepted by over 4000 universities
+              </li>
+          </ul>
+      </div>
+      <hr />
 
-        <span>Convenient</span>
-        <p>Take the test online anywhere, anytime — no traveling to a test center or appointment needed</p>
-    </div>
+      <h3>On demand, anywhere in the world</h3>
+      <div class="mydiv">
 
-    <div class="mydiv">
-        <div class="pic">
-            <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/e2b4d673643684d90a33.svg"
-                 alt="boy with scissor" width="300" height="300"> <br />
-        </div>
-        <span>Affordable</span>
-        <p>A fraction of the cost of other tests. Send your scores to an unlimited number of institutions for free!</p>
-    </div>
+          <div class="pic">
+              <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/7f3afeb8d03858f5e1af.svg"
+                   alt="studying boy" width="300" height="300"> <br />
+          </div>
 
-    <div class="mydiv">
+          <span class="smalltxt">Convenient</span>
+          <p>Take the test online anywhere, anytime — no traveling to a test center or appointment needed</p>
+      </div>
 
-        <div class="pic">
-            <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/e7259a1effee7e8b96a0.svg"
-                 alt="riding boy" width="300" height="300"> <br />
-        </div>
+      <div class="mydiv">
+          <div class="pic">
+              <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/e2b4d673643684d90a33.svg"
+                   alt="boy with scissor" width="300" height="300"> <br />
+          </div>
+          <span class="smalltxt">Affordable</span>
+          <p>A fraction of the cost of other tests. Send your scores to an unlimited number of institutions for free!</p>
+      </div>
 
-        <span>Fast</span>
-        <p>Get your results within 2 days of completing the test, and share it with anyone, immediately</p>
-    </div>
+      <div class="mydiv">
 
-    <footer>
-        <h3>Get started</h3>
-        <p>
-            Sign up now and certify your English proficiency today. Test online anytime, anywhere.
-            Finish in 1 hour and get results in 2 days. Share your results with 4,000+ institutions.
-        </p>
-    </footer>
+          <div class="pic">
+              <img src="https://d23cwzsbkjbm45.cloudfront.net/static/images/wp/e7259a1effee7e8b96a0.svg"
+                   alt="riding boy" width="300" height="300"> <br />
+          </div>
 
-</body>
+          <span class="smalltxt">Fast</span>
+          <p>Get your results within 2 days of completing the test, and share it with anyone, immediately</p>
+      </div>
+
+      <footer>
+          <h3>Get started</h3>
+          <p>
+              Sign up now and certify your English proficiency today. Test online anytime, anywhere.
+              Finish in 1 hour and get results in 2 days. Share your results with 4,000+ institutions.
+          </p>
+      </footer>
+
+  </body>
 </html>
